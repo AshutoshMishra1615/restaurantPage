@@ -1,7 +1,7 @@
 
 import { useState } from "react"
 import { PhoneIcon, MailIcon, LocationMarkerIcon, PlayIcon } from "@heroicons/react/outline";
-function Content({active}){
+function Content({active,handleClick}){
 
     const homeSetting= ()=>{
         return (
@@ -17,7 +17,7 @@ function Content({active}){
       Discover delectable cuisine and unforgettable moments in our welcoming culinary haven.
     </p>
     <div className="flex justify-center space-x-4">
-      <button className="px-6 py-3 text-gray-800 bg-white border border-gray-300 rounded-full shadow-md hover:border-gray-400 hover:bg-gray-100">
+      <button onClick={()=>handleClick('menu')} className="px-6 py-3 text-gray-800 bg-white border border-gray-300 rounded-full shadow-md hover:border-gray-400 hover:bg-gray-100">
         Explore Menu
       </button>
     </div>

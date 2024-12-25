@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <Navbar active={active} handleClick={handleClick}/>
-    <Content active={active}/>
+    <Content active={active} handleClick={handleClick}/>
     <Footer/>
     </>
   )
